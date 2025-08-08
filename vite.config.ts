@@ -16,8 +16,9 @@ export default defineConfig({
     },
   },
   root: path.resolve(import.meta.dirname, "client"),
+  base: "./", // Ensures relative paths for GitHub Pages
   build: {
-    outDir: path.resolve(import.meta.dirname, "dist/public"),
+    outDir: path.resolve(import.meta.dirname, "dist"), // Output to 'dist' for GitHub Pages
     emptyOutDir: true,
   },
   server: {
