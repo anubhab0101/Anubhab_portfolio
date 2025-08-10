@@ -1,0 +1,41 @@
+{
+  "version": 2,
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "functions": {
+    "api/projects.js": {
+      "runtime": "nodejs18.x"
+    },
+    "api/testimonials.js": {
+      "runtime": "nodejs18.x"
+    },
+    "api/certificates.js": {
+      "runtime": "nodejs18.x"
+    },
+    "api/contact.js": {
+      "runtime": "nodejs18.x"
+    }
+  },
+  "routes": [
+    {
+      "src": "/api/projects",
+      "dest": "/api/projects.js"
+    },
+    {
+      "src": "/api/testimonials", 
+      "dest": "/api/testimonials.js"
+    },
+    {
+      "src": "/api/certificates",
+      "dest": "/api/certificates.js"
+    },
+    {
+      "src": "/api/contact",
+      "dest": "/api/contact.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ]
+}
