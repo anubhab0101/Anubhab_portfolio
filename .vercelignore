@@ -5,4 +5,4 @@ node_modules
 .DS_Store
 server/index.ts
 server/vite.ts
-attached_assets
+
