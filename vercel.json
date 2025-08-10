@@ -4,16 +4,16 @@
   "outputDirectory": "dist",
   "functions": {
     "api/projects.js": {
-      "runtime": "nodejs18.x"
+      "runtime": "@vercel/node@3.0.0"
     },
     "api/testimonials.js": {
-      "runtime": "nodejs18.x"
+      "runtime": "@vercel/node@3.0.0"
     },
     "api/certificates.js": {
-      "runtime": "nodejs18.x"
+      "runtime": "@vercel/node@3.0.0"
     },
     "api/contact.js": {
-      "runtime": "nodejs18.x"
+      "runtime": "@vercel/node@3.0.0"
     }
   },
   "routes": [
