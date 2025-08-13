@@ -1,12 +1,20 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
+import { viteStaticCopy } from 'vite-plugin-static-copy';
 // Removed Replit plugin for local development
 
 export default defineConfig({
   plugins: [
     react(),
-  // ...existing code...
+    viteStaticCopy({
+      targets: [
+        {
+          src: 'attached_assets/*',
+          dest: 'attached_assets'
+        }
+      ]
+    })
   ],
   resolve: {
     alias: {
