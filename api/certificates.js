@@ -4,10 +4,9 @@ export default (req, res) => {
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
   if (req.method === 'OPTIONS') return res.status(200).end();
-  // Demo data
-  const certificates = [
-    { id: 1, name: 'Certificate 1', issuer: 'Issuer A', year: 2023 },
-    { id: 2, name: 'Certificate 2', issuer: 'Issuer B', year: 2024 }
-  ];
-  res.status(200).json(certificates);
+  // Real data from MemStorage
+  import { storage } from "../server/storage";
+  storage.getCertificates().then(certificates => {
+    res.status(200).json(certificates);
+  });
 };
