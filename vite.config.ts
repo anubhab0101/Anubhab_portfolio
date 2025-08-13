@@ -2,7 +2,6 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
 import { viteStaticCopy } from 'vite-plugin-static-copy';
-// Removed Replit plugin for local development
 
 export default defineConfig({
   plugins: [
@@ -24,9 +23,9 @@ export default defineConfig({
     },
   },
   root: path.resolve(import.meta.dirname, "client"),
-  base: "./", // Ensures relative paths for GitHub Pages
+  base: "./",
   build: {
-    outDir: path.resolve(import.meta.dirname, "dist"), // Output to 'dist' for GitHub Pages
+    outDir: path.resolve(import.meta.dirname, "dist"),
     emptyOutDir: true,
   },
   server: {
