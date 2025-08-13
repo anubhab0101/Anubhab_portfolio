@@ -1,8 +1,7 @@
 node_modules
 .env*
-.replit
+
 *.log
 .DS_Store
-server/index.ts
-server/vite.ts
+
 
