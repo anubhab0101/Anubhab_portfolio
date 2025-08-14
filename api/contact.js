@@ -1,4 +1,4 @@
-import { storage } from "./storage";
+const { storage } = require("./storage.js");
 // Serverless function for contact form
 export default (req, res) => {
   res.setHeader('Access-Control-Allow-Origin', '*');

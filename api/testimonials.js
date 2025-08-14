@@ -1,4 +1,4 @@
-import { storage } from "./storage";
+const { storage } = require("./storage.js");
 // Serverless function for testimonials
 export default (req, res) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
