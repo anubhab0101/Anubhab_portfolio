@@ -1,5 +1,6 @@
-const { randomUUID } = require("crypto");
-const { users, contacts, projects, testimonials, certificates } = require("../shared/schema");
+
+import { randomUUID } from "crypto";
+import { users, contacts, projects, testimonials, certificates } from "../shared/schema";
 
 class MemStorage {
   constructor() {
@@ -366,4 +367,4 @@ class MemStorage {
   }
 }
 
-module.exports = { storage: new MemStorage() };
+export const storage = new MemStorage();
