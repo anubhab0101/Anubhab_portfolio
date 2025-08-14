@@ -1,6 +1,6 @@
 
 import { randomUUID } from "crypto";
-import { users, contacts, projects, testimonials, certificates } from "../shared/schema";
+import { users, contacts, projects, testimonials, certificates } from "./schema.js";
 
 class MemStorage {
   constructor() {
