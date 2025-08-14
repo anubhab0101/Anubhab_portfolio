@@ -1,4 +1,4 @@
-import { storage } from "../server/storage";
+import { storage } from "./storage";
 // Serverless function for contact form
 export default (req, res) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
@@ -20,4 +20,4 @@ export default (req, res) => {
   }
   res.status(405).json({ error: 'Method not allowed' });
 };
-};
+

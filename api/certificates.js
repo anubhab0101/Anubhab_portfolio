@@ -1,4 +1,4 @@
-import { storage } from "../server/storage";
+import { storage } from "./storage";
 // Serverless function for certificates
 export default (req, res) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
